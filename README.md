@@ -31,6 +31,7 @@ Paper Jar file [PaperMC](https://papermc.io/downloads)
 ## Pregenerate World
 This is extremely important! It will greatly cut down on lag that can be
 created by loading a lot of chunks!
+
 Plugin for Pregenerating. [Chunky](https://www.spigotmc.org/resources/chunky.81534/)
 
 World Pregeneration speed will depend on how fast the cpu your server has!
