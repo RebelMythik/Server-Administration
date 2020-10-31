@@ -37,7 +37,7 @@ Plugin for Pregenerating: [Chunky](https://www.spigotmc.org/resources/chunky.815
 World Pregeneration speed will depend on how fast the cpu your server has!
 
 ## YMLs
-Bukkit.yml
+Bukkit.yml [Link](https://github.com/RebelMythik/Server-Administration/blob/main/Bukkit)
 
 Spigot.yml
 
