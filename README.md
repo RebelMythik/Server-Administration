@@ -28,12 +28,16 @@ Startup Flags: [Aikar's Flags](https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-g
 ## Jar File
 Paper Jar file [PaperMC](https://papermc.io/downloads)
 
-Bukkit.yml
 ## Pregenerate World
 This is extremely important! It will greatly cut down on lag that can be
 created by loading a lot of chunks!
 Plugin for Pregenerating. [Chunky](https://www.spigotmc.org/resources/chunky.81534/)
+
 World Pregeneration speed will depend on how fast the cpu your server has!
 
 ## YMLs
-Link 
+Bukkit.yml
+
+Spigot.yml
+
+Paper.yml
