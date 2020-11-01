@@ -1,1 +1,149 @@
+Warning: Paper is an unofficial fork and is not supported on Spigot forums. If you have issues related to Paper, report them on Paper's issue tracker, not on Spigot!  
 
+max-auto-save-chunks-per-tick  
+Default: 24    
+Optimized: 6  
+Performance Impact: Heavy  
+
+This slows incremental chunk saving during the world save task. This is incredibly important for 1.13+ servers with how inefficient chunk saving is.  
+
+Note: Be sure your save can finish between your autosave interval. Setting this too low might result in unsaved chunks. 
+If you have 40+ players online, you should try to keep this at 8 to be safe.  
+
+optimize-explosions  
+Default: false  
+Optimized: true  
+Impact: Minor  
+
+Paper has a very efficient algorithm for explosions with no impact to gameplay.  
+
+mob-spawner-tick-rate  
+Def: 1  
+Opt: 2  
+Impact: Minor  
+
+This is the delay (in ticks) before an active spawner attempts spawns. Doubling the delay will not impact spawn rates.   
+Only go higher if you have significant tick loss from ticking spawners.  
+
+disable-chest-cat-detection  
+Def: false  
+Opt: true  
+Impact: Minor  
+
+Chests scan for a cat on top of it when opened by a player. While enabling this eliminates vanilla behavior (cats block chests), do you really need this mechanic?  
+
+container-update-tick-rate  
+Def: 1  
+Opt: 3  
+Impact: Minor  
+
+This changes how often (in ticks) inventories are refreshed while open. Do not exceed 4 to avoid visual issues.  
+
+max-entity-collisions (in Spigot.yml in some builds)  
+Def: 8  
+Opt: 2  
+Impact: Medium  
+
+Crammed entities (grinders, farms, etc.) will collide less and consume less TPS in the process.  
+
+grass-spread-tick-rate  
+Def: 1  
+Opt: 4  
+Impact: Medium  
+
+The time (in ticks) before the server tries to spread grass in chunks. This will have no gameplay impact on most game types.  
+
+despawn-ranges  
+Def: soft: 32, hard: 128  
+Opt: soft: 28, hard: 96  
+Impact: Minor  
+
+Soft = The distance (in blocks) from a player where mobs will be periodically removed.  
+Hard = Distance where mobs are removed instantly.  
+
+Lower ranges clear background mobs and allow more to be spawned in areas with player traffic. This further reduces the gameplay impact of reduced spawning (bukkit.yml).  
+
+hopper.disable-move-event  
+Def: false  
+Opt: true  
+Impact: Heavy  
+
+This will significantly reduce hopper lag by preventing InventoryMoveItemEvent being called for EVERY slot in a container.  
+
+Warning: If you have a plugin that listens to InventoryMoveItemEvent, do not enable.  
+
+non-player-arrow-despawn-rate  
+Def: -1 (uses Spigot arrow-despawn-rate)  
+Opt: 60 (3 seconds)  
+Impact: Minor  
+
+Similar to Spigot's arrow-despawn-rate, but targets skeleton-fired arrows. Since players cannot retrieve mob arrows, this is only a cosmetic change.  
+
+creative-arrow-despawn-rate  
+Def: -1 (Spigot arrow-despawn-rate)  
+Opt: 60 (3 seconds)  
+Impact: Minor  
+
+Like the setting above, but for player-fired arrows that cannot be retrieved (infinity bows).  
+
+prevent-moving-into-unloaded-chunks  
+Def: false  
+Opt: true  
+Impact: Medium  
+
+Prevents players from entering an unloaded chunk (due to lag), which causes more lag. The true setting will set them back to a safe location instead.  
+
+Note: If you did not pre-generate your world (what's wrong with you?!) this setting is critical.  
+
+use-faster-eigencraft-redstone
+Def: false
+Opt: true
+Impact: Heavy
+
+This setting reduces redundant redstone updates by as much as 95% without breaking vanilla devices. Empirical testing shows a speedup by as much as 10x!
+
+Note: If you use a plugin to change redstone algorithms, consider replacing them with this option as plugins tend to break redstone behavior.
+
+armor-stands-tick
+Def: true
+Opt: false
+Impact: Minor
+
+Some items are viewed as entities (require ticking) since they interact with the world. Unticked armor stands will not get pushed by water (do you care?)
+
+Note: Paper also offsets item frame ticking instead of ticking all frames at once. This is not configurable, just enjoy the TPS savings with no gameplay impact.
+
+per-player-mob-spawns
+Def: false
+Opt: true
+Impact: Minor
+
+This implements singleplayer spawning behavior instead of Bukkit's random algorithms. 
+This prevents the actions of others (i.e. Massive farms) from impacting the server's spawn rates.
+
+Note: If you lowered spawn-limits in Bukkit and notice shortages of animals and monsters, consider bumping those back up until you find a happy place.
+
+alt-item-despawn-rate
+Def: false
+Opt: true
+Impact: Medium
+
+Remove certain item drops faster (or slower) than the item-despawn-rate set in Spigot. This lets you avoid dedicating resources to ticking massive piles of garbage.
+
+Example of despawning cobblestone and netherrack in 15 seconds:
+Code (Text):
+      enabled: true
+      items:
+        COBBLESTONE: 300
+        NETHERRACK: 300
+Note: Make sure you use the Spigot material list when adding items.
+
+anti-xray.enabled
+Def: false
+Opt: true
+Impact: N/A
+
+While this setting will actually cost TPS, Paper's anti-xray is the most efficient in existence! 
+Engine 1 might be less heavy (mainly for clients), but mode 2 is by far more effective.
+
+Taken From Spigot Website
