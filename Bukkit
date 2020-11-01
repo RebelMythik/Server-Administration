@@ -11,7 +11,7 @@ Def: 600
 Opt: 400  
 Impact: Medium  
 
-➫ This unloads vacant chunks faster. Ticking fewer chunks means less TPS consumption.  
+This unloads vacant chunks faster. Ticking fewer chunks means less TPS consumption.  
 
 ticks-per.monster-spawns  
 Def: 1  
