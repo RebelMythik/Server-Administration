@@ -16,9 +16,11 @@ threat of a DDoS Attack (Denial of Service). I would recommend personally to
 pay for hosting which removes a lot of the risk of a DDoS attack.
 
 ## Hosting Companies
-1. Bloom Host: [Link](https://bloom.host/)
+### 1. Bloom Host: 
+[Website](https://bloom.host/)
 
-2. DedicatedMC: [Link](https://dedicatedmc.io/minecraft)
+### 2. DedicatedMC: 
+[Website](https://dedicatedmc.io/minecraft)
 
 # Basic Optimization
 
@@ -40,4 +42,23 @@ Bukkit.yml: [Link](https://github.com/RebelMythik/Server-Administration/blob/mai
 Spigot.yml: [Link](https://github.com/RebelMythik/Server-Administration/blob/main/Spigot) 
 
 Paper.yml: [Link](https://github.com/RebelMythik/Server-Administration/blob/main/Paper)
+
+# Plugins
+
+## Free Plugins
+
+### Permissions
+LuckPerms: [Download](https://luckperms.net/)
+
+### Essentials
+EssentialsX: [Download](https://www.spigotmc.org/resources/essentialsx.9089/)  
+EssentialsXSpawn and EssentialsXChat
+
+### Griefing Prevention
+CoreProtect: [Download](https://www.spigotmc.org/resources/coreprotect.8631/)
+
+Grief Prevention: [Download](https://www.spigotmc.org/resources/griefprevention.1884/)
+### Support Multiple Versions
+Older Verions of MC  
+ProtocolSupport: [Download](https://www.spigotmc.org/resources/protocolsupport.7201/)
 
