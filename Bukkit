@@ -1,1 +1,37 @@
+spawn-limits  
+Default: monsters:70, animals:10, water-animals:15, ambient:15  
+Optimized: monsters:50, animals:8, water-animals:3, ambient:1  
+Performance Impact: Medium  
 
+While there is more to this than "mobs per player" (explained in PDF), lower values mean less mobs. Avoid going too low or the mob shortages will be noticeable.  
+Subsequent values in the guide will make the reduction less noticeable.   
+
+chunk-gc.period-in-ticks  
+Def: 600  
+Opt: 400  
+Impact: Medium  
+
+➫ This unloads vacant chunks faster. Ticking fewer chunks means less TPS consumption.  
+
+ticks-per.monster-spawns  
+Def: 1  
+Opt: 4  
+Impact: Medium  
+
+This sets how often (in ticks) the server attempts to spawn a monster. Slighty increasing the time between spawns should not impact spawn rates.   
+
+Note: Only go higher if you have significant tick loss to the mobSpawn task.  
+
+autosave  
+Def: 6000 (usually)  
+Opt: 6000  
+Impact: N/A  
+
+This enables Bukkit's world saving and how often it runs (in ticks). It should be 6000 by default, just double check it is not 0 (disabled).  
+This is a gradual/queued task (no lag?).  
+
+Note: If you use Multicraft or a plugin to run saves, STOP! They just run the very inefficient /save-all command.  
+
+Worldsave Lag: If you have lag spikes from Worldsave, you might consider Paper's lag-free saving.  
+
+Taken From Spigot Website  
