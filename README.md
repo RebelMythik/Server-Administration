@@ -1,11 +1,11 @@
 # Server Hardware and Optimization
 
 ## Server Requirements
-3.0 GHz+ CPU
-4GB+ Ram
-DDoS Protection
-Automatic Backups
-Fast Internet Connection
+3.0 GHz+ CPU  
+4GB+ Ram  
+DDoS Protection  
+Automatic Backups  
+Fast Internet Connection  
 
 Having many people connecting to your server from around the world
 you want to provide the best experience for the players. Hosting a
@@ -37,8 +37,9 @@ Plugin for Pregenerating: [Chunky](https://www.spigotmc.org/resources/chunky.815
 World Pregeneration speed will depend on how fast the cpu your server has!
 
 ## YMLs
-Bukkit.yml [Link](https://github.com/RebelMythik/Server-Administration/blob/main/Bukkit)
+Bukkit.yml: [Link](https://github.com/RebelMythik/Server-Administration/blob/main/Bukkit)
 
-Spigot.yml
+Spigot.yml: [Link](https://github.com/RebelMythik/Server-Administration/blob/main/Spigot) 
 
-Paper.yml
+Paper.yml: [Link](https://github.com/RebelMythik/Server-Administration/blob/main/Paper)
+
