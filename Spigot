@@ -1,5 +1,3 @@
-Spigot.yml Optimization
-
 save-user-cache-on-stop-only  
 Default: false  
 Optimized: true  
