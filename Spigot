@@ -1,6 +1,6 @@
-#Spigot.yml Optimization
+Spigot.yml Optimization
 
-##save-user-cache-on-stop-only  
+save-user-cache-on-stop-only  
 Default: false  
 Optimized: true  
 Performance Impact: Medium  
