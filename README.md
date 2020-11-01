@@ -1,7 +1,6 @@
 # Server Hardware and Optimization
 
 ## Server Requirements
-3.0 GHz+ CPU  
 4GB+ Ram  
 DDoS Protection  
 Automatic Backups  
