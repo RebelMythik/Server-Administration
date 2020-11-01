@@ -1,9 +1,11 @@
-save-user-cache-on-stop-only  
+#Spigot.yml Optimization
+
+##save-user-cache-on-stop-only  
 Default: false  
 Optimized: true  
 Performance Impact: Medium  
 
-➫ Should the server constantly save user data (false) or delay that task until a stop/restart (true)?   
+Should the server constantly save user data (false) or delay that task until a stop/restart (true)?   
 This is nice TPS savings on Spigot (less on Paper since it's more efficient).  
 
 Note: Take regular backups to avoid data loss in the rare event of a fatal crash.  
