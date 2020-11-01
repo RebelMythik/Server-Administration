@@ -1,1 +1,82 @@
+save-user-cache-on-stop-only  
+Default: false  
+Optimized: true  
+Performance Impact: Medium  
 
+➫ Should the server constantly save user data (false) or delay that task until a stop/restart (true)?   
+This is nice TPS savings on Spigot (less on Paper since it's more efficient).  
+
+Note: Take regular backups to avoid data loss in the rare event of a fatal crash.  
+
+max-tick-time  
+Def: tile:50, entity:50  
+Opt: tile:1000, entity:1000  
+Impact: N/A  
+
+The optimized value disables this feature. The small TPS savings is not worth the potential damage.  
+
+mob-spawn-range  
+Def: 8  
+Opt: 6  
+Impact: N/A  
+
+This sets the max mob spawn distance (in chunks) from players. After limiting spawns in Bukkit, this will condense mobs to mimic the appearance of normal rates.  
+
+Warning: If your view-distance is 6 or less, set a spawn range 1 below that value. For example, if view-distance is 5, set mob-spawn-range to 4.  
+
+entity-activation-range  
+Def: animals:32, monsters:32, raiders: 48, misc:16  
+Opt: animals:16, monsters:24, raiders: 48, misc:8  
+Impact: Medium  
+
+Entities past this range will be ticked less often. Avoid setting this too low or you might break mob behavior (mob aggro, raids, etc).  
+
+tick-inactive-villagers  
+Def: true  
+Opt: false  
+Impact: Medium  
+
+Enabling this prevents the server from ticking villagers outside the activation range. Villager tasks in 1.14+ are very heavy.  
+
+Note: The vanilla behavior would tick all villagers in loaded chunks.  
+
+merge-radius  
+Def: item:2.5, exp:3.0  
+Opt: item:4.0, exp:6.0  
+Impact: Medium  
+
+Merging items means less ground item ticking. Higher values allow more items to be swept into piles.  
+
+Note: Merging will lead to the illusion of items disappearing as they merge together. A minor annoyance.  
+
+nerf-spawner-mobs  
+Def: false  
+Opt: true  
+Impact: Medium  
+
+When enabled, mobs from spawners will not have AI (will not swim/attack/move). 
+This is big TPS savings on servers with mob farms, but also messes with their behavior. A farm limiter plugin might be a better solution.  
+
+Note: Paper has an option to force nerfed mobs to jump/swim. This fixes water push farms and keeps the TPS savings.  
+
+item-despawn-rate  
+Def: 6000 (5 minutes)  
+Opt: less?  
+Impact: Situational  
+
+The time (in ticks) before a ground item is removed.  
+While the TPS savings can be significant if reduced, it also impacts gameplay on servers where returning to dropped items is critical.  
+
+Note: See Paper's alt-item-despawn-rate so you can target trash items (cobblestone) without clearing valuable items (diamonds).  
+
+arrow-despawn-rate  
+Def: 1200  
+Opt: 300  
+Impact: Minor  
+
+Similar to item-despawn-rate, but for fired arrows. Some servers may want to keep arrows on the ground longer, but most will have no complaints from faster removal.  
+
+Note: Paper has settings to reduce the gameplay impact of arrow removal. Leave this near default if you use Paper's despawn options.  
+
+Taken From Spigot Website.
+ 
