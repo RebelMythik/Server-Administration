@@ -61,4 +61,9 @@ Grief Prevention: [Download](https://www.spigotmc.org/resources/griefprevention.
 ### Support Multiple Versions
 Older Verions of MC  
 ProtocolSupport: [Download](https://www.spigotmc.org/resources/protocolsupport.7201/)
-
+## Administration
+AdvancedBan: [Download](https://www.spigotmc.org/resources/advancedban.8695/)  
+CoreProtect: [Download](https://www.spigotmc.org/resources/coreprotect.8631/)  
+Inventory Rollback: [Download](https://www.spigotmc.org/resources/inventory-rollback.48074/)  
+Supervanish: [Download](https://www.spigotmc.org/resources/supervanish-be-invisible.1331/)  
+Conditional Commands:[Download](https://www.spigotmc.org/resources/conditionalcommands.14295/)   
