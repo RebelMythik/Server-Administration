@@ -63,7 +63,15 @@ Older Verions of MC
 ProtocolSupport: [Download](https://www.spigotmc.org/resources/protocolsupport.7201/)
 ## Administration
 AdvancedBan: [Download](https://www.spigotmc.org/resources/advancedban.8695/)  
+Manage Your Bans With This Easy To Use Ban Plugin
+
 CoreProtect: [Download](https://www.spigotmc.org/resources/coreprotect.8631/)  
+CoreProtect keeps track of all block data. Great for rolling back griefs and catching x-rayers.
+
 Inventory Rollback: [Download](https://www.spigotmc.org/resources/inventory-rollback.48074/)  
+Have this plugin for when one of your player inventory gets cleared.
+
 Supervanish: [Download](https://www.spigotmc.org/resources/supervanish-be-invisible.1331/)  
-Conditional Commands:[Download](https://www.spigotmc.org/resources/conditionalcommands.14295/)   
+Keeps you hidden from your players.
+
+ 
